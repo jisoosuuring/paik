@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빽다방 홈페이지</title>
+    <link rel="stylesheet" href="css/빽다방.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".visual_swiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3000, // 3초마다 슬라이드 전환
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination', // 페이지 네비게이션 (점) 추가
+                    clickable: true,           // 점 클릭 시 슬라이드로 이동
+                },
+                loop: true // 슬라이드 루프(무한 회전) 활성화  
+            });
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2.8,
+                spaceBetween: 30,
+                centeredSlides: true, // 슬라이드가 중앙에 위치하도록 설정
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                loop: true // 슬라이드 루프(무한 회전) 활성화   
+            });
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="">
+                    <a href="#"> </a>
+                    <div class="logo">
+                    <img src="img/paiks_logo01 (1).jpg" alt="">
+                    </div>
+                </h1>
+
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="#">빽다방</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">소식</a></li>
+                        <li><a href="#">매장 안내</a></li>
+                        <li><a href="#">창업 안내</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                    </ul><!-- gnb end -->
+                </nav><!-- nav end -->
+
+                <ul class="util">
+                    <li>더본코리아</li>
+                    <li><img src="img/페이스북.png" alt=""></li>
+                    <li><img src="img/인스타.png" alt=""></li>
+                </ul><!-- util end -->
+            </div> <!-- inner end -->
+        </header> <!-- .header end -->
+    </div> <!-- wrap end -->
+
+    <!-- swiper demo -->
+    <section class="visual">
+        <!-- Swiper -->
+        <div class="swiper visual_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/빽다방 햄치즈샌드위치_pc-1.jpg" alt="">
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 딸기 배너.jpg" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 빔 배너.jpg" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 두바이 배너.png" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 푸딩 배너.jpg" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 짱구 배너.jpg" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 터키시_딜라이트 배너.jpg" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 우리쌀 3종 배너jpg.jpg" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+                <div class="swiper-slide">
+                    <img src="img/빽다방 멤버십활성화 배너.jpg" alt="" />
+                    <div class="text">
+                        <a href="바로가기"></a>
+                    </div><!-- text end -->
+                </div> <!-- swiper slide -->
+
+            </div><!-- swiper-slide -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div> <!-- 페이지 네비게이션 (점) -->
+        </div>
+    </section><!-- section_visual end -->
+
+    <!-- 콘텐츠 영역 -->
+    <div class="container">
+        <!-- 왼쪽 영역 -->
+        <div class="left">
+            <div class="left-content">
+                <h1>신메뉴</h1>
+                <div class="images">
+                    <div class="image-item">
+                        <div class="new-icon">NEW</div>
+                        <img src="img/솜사탕딸밀쉐_thum-450x588.png" alt="메뉴 이미지 1">
+                        <h2>솜사탕 딸기 밀크 쉐이크</h2>
+                        <b>4,000원</b>
+                    </div>
+                    <div class="image-item">
+                        <div class="new-icon">NEW</div>
+                        <img src="img/밤페스츄리_thum-450x588.png" alt="메뉴 이미지 2">
+                        <h2>달콤밤페스츄리</h2>
+                        <b>3,800원</b>
+                    </div>
+
+                    <dic class="icon">
+                        <img src="img/더하기.png" alt="" />
+                    </dic><!-- icon -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 오른쪽 영역 -->
+        <div class="right">
+            <div class="right-content">
+                <h1>추천메뉴</h1> <!-- 추천메뉴 제목 추가 -->
+                <div class="images">
+                    <div class="image-item">
+                        <img src="img/ICED-원조커피-450x588.png" alt="추천 이미지 1">
+                        <div class="best-icon">BEST</div>
+                        <h2>원조커피</h2>
+                        <b>2,500원</b>
+                    </div>
+                    <div class="image-item">
+                        <img src="img/청포도에이드-450x588.png" alt="추천 이미지 2">
+                        <div class="best-icon">BEST</div>
+                        <h2>청포도 에이드</h2>
+                        <b>4,000원</b>
+                    </div>
+                    <div class="image-item">
+                        <img src="img/완전딸기바나나-SOFT-450x588.png" alt="추천 이미지 3">
+                        <div class="best-icon">BEST</div>
+                        <h2>딸기 바나나 빽스치노</h2>
+                        <b>3,800원</b>
+                    </div>
+                    <dic class="icon">
+                        <img src="img/더하기.png" alt="" />
+                    </dic><!-- icon -->
+                </div> <!-- images end -->
+            </div>
+        </div> <!-- right end -->
+    </div><!-- container end -->
+
+    <!-- PAIK'S STORY 배너 -->
+    <section class="paiks-story-section">
+        <div class="image-banner">
+            <img src="img/bg-menu4.jpg" alt="배너 이미지">
+            <div class="paiks-story-text">
+                <h4>PAIK'S STORY</h4>
+            </div>
+            <div class="paiks-story-sub-text">
+                <h5>COFFEE STORY</h5>
+                <h6>BRAND STORY</h6>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/main_sec4.jpg" alt="">
+                <div class="slide-text">SWEET</br>PAIK’S CCINO</div> <!-- 텍스트 추가 -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/음료 사진.jpg" alt="">
+                <div class="slide-text">SPARKLING</br>ADE</div> <!-- 텍스트 추가 -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/mmain_sec2.jpg" alt="">
+                <div class="slide-text">FRESH</br>COFFEE</div> <!-- 텍스트 추가 -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_sec5.jpg" alt="">
+                <div class="slide-text">SPECIAL</br>DESSERT</div> <!-- 텍스트 추가 -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_sec4.jpg" alt="">
+                <div class="slide-text">SWEET</br>PAIK’S CCINO</div> <!-- 텍스트 추가 -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/음료 사진.jpg" alt="">
+                <div class="slide-text">SPARKLING</br>ADE</div> <!-- 텍스트 추가 -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/mmain_sec2.jpg" alt="">
+                <div class="slide-text">FRESH</br>COFFEE</div> <!-- 텍스트 추가 -->
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_sec5.jpg" alt="">
+                <div class="slide-text">SPECIAL</br>DESSERT</div> <!-- 텍스트 추가 -->
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+
+
+    <div class="big_box">
+        <!-- 첫 번째 박스 -->
+        <div class="box">
+            <h3>STORE</h3>
+            <div class="content">
+                <p class="text">원하시는 지역의 매장을 검색해보세요!</p>
+                <div class="search-box">
+                    <div class="rectangle">
+                        <p class="rectangle-text">Find a store in your area</p>
+                        <img src="img/search-ico.png" alt="검색 아이콘" class="search-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 두 번째 박스 -->
+        <div class="box">
+            <h3>FRANCHISE</h3>
+            <div class="content">
+                <p class="text">빽다방 창업 안내를 도와드릴게요!</p>
+                <img src="img/main_sec6.png" alt="이미지 2" class="content-img">
+            </div>
+        </div>
+    
+        <!-- 세 번째 박스 -->
+        <div class="box">
+            <h3>SNS</h3>
+            <div class="content">
+                <p class="text">빽다방 소식을 더 빠르게 만나보세요!</p>
+                <span>#빽다방 #빽다방신메뉴 #빽다방이벤트</span>
+                <div class="sns-icons">
+                    <img src="img/페이스북.png" alt="페이스북" class="sns-icon">
+                    <img src="img/인스타.png" alt="인스타그램" class="sns-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+</body>
+
+<div class="footer">
+    <div class="footer-container">
+        <!-- 더본 로고 -->
+        <div class="footer-logo">
+            <img src="img/더본로고.png" alt="더본코리아 로고">
+        </div>
+
+        <!-- 정보 섹션 -->
+        <div class="footer-info">
+            <p><a href="#" class="footer-link">개인정보처리방침</a></p>
+            <p>(주)더본코리아 사업자등록번호 211-86-00870 대표이사 백종원, 강석원</p>
+            <p>주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 팩스: 02-511-3864</p>
+            <p>본사 대표전화: 02-549-3864 | 가맹상담전화: 02-3447-0410 | 고객센터: 1544-2360</p>
+            <p>COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED</p>
+        </div>
+
+        <!-- 패밀리 사이트 버튼 -->
+        <div class="footer-family">
+            <a href="#" class="footer-family-btn">
+                <i class="fas fa-link"></i> 패밀리사이트 바로가기
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</html>
