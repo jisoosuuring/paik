@@ -13,6 +13,12 @@ a {
     color: inherit;
 }
 
+
+body {
+    min-width: 1920px;
+}
+
+
 /* 상단 util 영역 */
 .util {
     position: absolute;
